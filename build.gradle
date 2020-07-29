@@ -27,6 +27,11 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
+	
+	testCompileOnly 'junit:junit'
+	//annotationProcessor('org.junit.Test')
+ 	//testAnnotationProcessor('org.junit.Test')
+
 }
 
 test {
