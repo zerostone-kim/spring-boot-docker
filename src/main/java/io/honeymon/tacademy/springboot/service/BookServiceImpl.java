@@ -24,6 +24,7 @@ public class BookServiceImpl implements BookService {
 	@Override
 	public Optional<Book> findById(Long id) {
 		// TODO Auto-generated method stub
+		System.out.println("�ڡڡڡڡڡ�" + id);
 		return bookRepository.findById(id);
 	}
 
