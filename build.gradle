@@ -27,14 +27,9 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
-<<<<<<< HEAD
-	
 	testCompileOnly 'junit:junit'
 	//annotationProcessor('org.junit.Test')
  	//testAnnotationProcessor('org.junit.Test')
-
-=======
->>>>>>> refs/remotes/origin/master
 }
 
 test {
