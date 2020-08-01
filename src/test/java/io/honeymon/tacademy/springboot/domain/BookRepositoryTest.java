@@ -16,7 +16,7 @@ public class BookRepositoryTest {
 
 	@Autowired
 	BookRepository repository;
-	
+	 
 	@Test
 	public void testSave() {
 		Book book = new Book();

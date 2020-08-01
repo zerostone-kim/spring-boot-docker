@@ -1,8 +1,8 @@
 package io.honeymon.tacademy.springboot.domain;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+//import javax.persistence.GeneratedValue;
+//import javax.persistence.Id;
 
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
