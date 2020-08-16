@@ -25,15 +25,15 @@ public class BookServiceTest {
 	@Autowired
 	Book book;
 	
-	@Test
+	@Test(expected=RuntimeException.class)
 	public void testFineById() {
-		Long id = (long) 1L;
+		Long id = 1L;
 		
 //		Book book = new Book();
-		book.setName("boot-spring-book");
-		book.setIsbn10("0123456789");
-		book.setIsbn13("012345678912");
-		repository.save(book);
+//		book.setName("boot-spring-book");
+//		book.setIsbn10("0123456789");
+//		book.setIsbn13("012345678912");
+//		repository.save(book);
 		
 		bookService.findById(id).orElseThrow(() -> new RuntimeException("Not found"));
 	}

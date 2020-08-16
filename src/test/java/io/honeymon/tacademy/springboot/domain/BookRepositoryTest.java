@@ -20,6 +20,7 @@ public class BookRepositoryTest {
 	@Test
 	public void testSave() {
 		Book book = new Book();
+
 		book.setName("boot-spring-book");
 		book.setIsbn10("0123456789");
 		book.setIsbn13("012345678912");
@@ -33,6 +34,7 @@ public class BookRepositoryTest {
 	@Test
 	public void testFindByNameLike() {
 		Book book = new Book();
+		
 		book.setName("boot-spring-book");
 		book.setIsbn10("0123456789");
 		book.setIsbn13("012345678912");
