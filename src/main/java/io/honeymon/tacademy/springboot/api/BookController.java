@@ -11,7 +11,7 @@ import io.honeymon.tacademy.springboot.domain.Book;
 import io.honeymon.tacademy.springboot.service.BookService;
 
 @RestController
-@RequestMapping(value = "/books")
+@RequestMapping(value = "/book")
 public class BookController {
 	
 	@Autowired

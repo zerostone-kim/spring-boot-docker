@@ -13,8 +13,7 @@ import io.honeymon.tacademy.springboot.domain.Book;
 import io.honeymon.tacademy.springboot.domain.BookRepository;
 
 @RunWith(SpringRunner.class)
-//@SpringBootTest(webEnvironment = WebEnvironment.NONE)
-@DataJpaTest
+@SpringBootTest(webEnvironment = WebEnvironment.NONE)
 public class BookServiceTest {
 	@Autowired
 	BookService bookService;
@@ -22,19 +21,9 @@ public class BookServiceTest {
 	@Autowired
 	BookRepository repository;
 	
-	@Autowired
-	Book book;
-	
 	@Test(expected=RuntimeException.class)
 	public void testFineById() {
 		Long id = 1L;
-		
-//		Book book = new Book();
-//		book.setName("boot-spring-book");
-//		book.setIsbn10("0123456789");
-//		book.setIsbn13("012345678912");
-//		repository.save(book);
-		
 		bookService.findById(id).orElseThrow(() -> new RuntimeException("Not found"));
 	}
 }

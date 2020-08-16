@@ -15,7 +15,7 @@ public class BookServiceImpl implements BookService {
 	private final BookRepository bookRepository;
 	
 	public BookServiceImpl(BookRepository bookRepository) {
-		super();
+//		super();
 		this.bookRepository = bookRepository;
 	}
 
